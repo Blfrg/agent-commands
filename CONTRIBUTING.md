@@ -1,7 +1,9 @@
 # Contributing to Agent Commands
 
 Welcome! This is a collection of optional markdown scripts for AI development
-assistants. Each command is standalone - users install only what they need.
+assistants like [Claude Code](https://claude.ai/code) and
+[Cursor](https://www.cursor.com/). Each command is standalone - users install
+only what they need.
 
 ## Adding a New Command
 
@@ -55,13 +57,14 @@ Before submitting:
 
    ```bash
    cp commands/your-command/your-command.md ~/.claude/commands/
-   # Try it in Claude Code
+   # Try it in Claude Code: https://claude.ai/code
    ```
 
 2. (Optional) Check markdown formatting:
 
    ```bash
    # This repo includes .markdownlint.json for consistency
+   # Uses markdownlint: https://github.com/DavidAnson/markdownlint
    npx markdownlint-cli2 commands/your-command/*.md
    ```
 

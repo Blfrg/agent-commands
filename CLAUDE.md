@@ -6,9 +6,10 @@ code in this repository.
 ## Project Overview
 
 This is a collection of **slash commands** (markdown-based LLM instructions)
-for AI development environments like Claude Code and Cursor. Each command in
-the `commands/` directory is a standalone, optional markdown file that users
-can install to enhance their workflow.
+for AI development environments like [Claude Code](https://claude.ai/code) and
+[Cursor](https://www.cursor.com/). Each command in the `commands/` directory is
+a standalone, optional markdown file that users can install to enhance their
+workflow.
 
 ## Architecture
 
@@ -45,7 +46,8 @@ Each command is:
 
 ### Markdown Linting
 
-The project uses markdownlint with configuration in `.markdownlint.json`:
+The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with
+configuration in `.markdownlint.json`:
 
 - Line length: 80 characters (120 for code blocks)
 - Heading style: ATX (`#` prefix)
@@ -60,7 +62,7 @@ npx markdownlint-cli2 commands/**/*.md docs/**/*.md *.md
 
 ### Commit Conventions
 
-Follow conventional commits format based on the `/commit` command implementation:
+Follow [Conventional Commits](https://www.conventionalcommits.org/) format based on the `/commit` command implementation:
 
 - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`,
   `ci`, `chore`

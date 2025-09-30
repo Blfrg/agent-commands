@@ -1,23 +1,32 @@
 # Agent Commands Collection
 
 A curated collection of intelligent slash commands for AI-powered development
-environments like Claude Code and Cursor. Each folder in the `commands`
-directory represents a specialized agent command that enhances your coding
-workflow with smart automation.
+environments like [Claude Code](https://claude.ai/code) and
+[Cursor](https://www.cursor.com/). Each folder in the `commands` directory
+represents a specialized agent command that enhances your coding workflow with
+smart automation.
+
+## What are slash commands?
+
+Slash commands are markdown-based instructions that extend AI coding assistants
+with custom workflows. Learn more:
+
+- [Claude Code Slash Commands](https://docs.claude.com/en/docs/claude-code/slash-commands)
+- [Cursor Commands](https://docs.cursor.com/en/agent/chat/commands)
 
 ## 📁 Available Commands
 
 ### `/commit` - Intelligent Atomic Git Commit Automation
 
 Transform messy, uncommitted changes into clean, well-organized atomic commits
-following conventional commit standards. This command analyzes your codebase
-changes and intelligently groups related modifications into separate, meaningful
-commits.
+following [Conventional Commits](https://www.conventionalcommits.org/) standards.
+This command analyzes your codebase changes and intelligently groups related
+modifications into separate, meaningful commits.
 
 **Key Features:**
 
 - Automatic change analysis and grouping
-- Conventional commit message generation
+- [Conventional Commits](https://www.conventionalcommits.org/) message generation
 - Breaking change detection and proper notation
 - Interactive mode for ambiguous changes
 - Respects project-specific conventions
@@ -98,13 +107,14 @@ Each command should:
 
 ## 📝 License
 
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE)
-file for details.
+This repository is licensed under the [MIT License](LICENSE) - see
+[opensource.org](https://opensource.org/licenses/MIT) for details.
 
 ## 🛠️ Requirements
 
-- Claude Code or Cursor AI development environment
-- Git (for version control commands)
+- [Claude Code](https://claude.ai/code) or [Cursor](https://www.cursor.com/) AI
+  development environment
+- [Git](https://git-scm.com/) (for version control commands)
 - Project-specific tools as required by individual commands
 
 ---
