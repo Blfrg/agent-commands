@@ -1,0 +1,82 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+# VSCode - selective approach (share important settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Claude Code / Cursor personal settings
+# NOTE: .claude/ and .cursor/ folders contain project commands
+# that SHOULD be committed for team sharing
+.claude/settings.local.json
+.cursor/settings.local.json
+CLAUDE.local.md
+CURSOR.local.md
+
+# Don't ignore project commands and settings:
+# .claude/commands/
+# .cursor/commands/
+# .claude/settings.json
+# .cursor/settings.json
+# CLAUDE.md
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+*.lcov
+.coverage
+
+# Documentation build
+docs/_build/
+site/
+
+# Package files
+*.tar.gz
+*.zip
+*.rar
+
+# Custom local commands (if users want to keep personal variations)
+local-commands/
+personal/
