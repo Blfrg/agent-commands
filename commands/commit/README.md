@@ -2,9 +2,10 @@
 
 ## Summary
 
-A slash command for Claude Code or Cursor that automatically analyzes your
-unstaged changes and creates multiple atomic, well-organized git commits
-following conventional commit standards.
+A slash command for [Claude Code](https://claude.ai/code) or
+[Cursor](https://www.cursor.com/) that automatically analyzes your unstaged
+changes and creates multiple atomic, well-organized git commits following
+[Conventional Commits](https://www.conventionalcommits.org/) standards.
 
 ## What It Does
 
@@ -12,15 +13,16 @@ Instead of dumping all changes into one large commit, this command:
 
 - Analyzes all modified files and intelligently groups related changes
 - Creates separate commits for features, fixes, refactoring, tests, and docs
-- Generates properly formatted conventional commit messages
+- Generates properly formatted [Conventional Commits](https://www.conventionalcommits.org/)
+  messages
 - Handles breaking changes safely with proper notation
 - Stages changes incrementally using `git add -p` when needed
 
 ## Key Benefits
 
 - ✅ **Clean Git History** - Each commit does one thing well
-- ✅ **Conventional Commits** - Follows industry standards (feat, fix, docs,
-  etc.)
+- ✅ **[Conventional Commits](https://www.conventionalcommits.org/)** - Follows
+  industry standards (feat, fix, docs, etc.)
 - ✅ **Automatic Grouping** - AI intelligently groups related changes
 - ✅ **Breaking Change Support** - Properly marks and documents breaking changes
 - ✅ **Bash Safety** - Handles special characters correctly (no `!` expansion
@@ -67,8 +69,9 @@ cp commands/commit/commit.md ~/.cursor/commands/
 
 ## How to Use
 
-Simply type `/commit` in Claude Code or Cursor when you have unstaged changes.
-The AI will handle the rest, asking for input only when necessary.
+Simply type `/commit` in [Claude Code](https://claude.ai/code) or
+[Cursor](https://www.cursor.com/) when you have unstaged changes. The AI will
+handle the rest, asking for input only when necessary.
 
 **Note**: Respects project-specific conventions from `CONTRIBUTING.md` or
 `.gitmessage` files when available.

@@ -15,8 +15,10 @@ information that should be included in commit message footers.
 
 **Supported keywords** (case-insensitive):
 
-- **Auto-closing** (GitHub/GitLab): `close`, `closes`, `closed`, `fix`, `fixes`,
-  `fixed`, `resolve`, `resolves`, `resolved`
+- **Auto-closing**
+  ([GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)/[GitLab](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)):
+  `close`, `closes`, `closed`, `fix`, `fixes`, `fixed`, `resolve`, `resolves`,
+  `resolved`
 - **Non-closing references**: `related to`, `refs`, `see also`, or just `#123`
 
 Keywords can be followed by optional colons (e.g., `Fixes: #123` or `Fixes #123`).
@@ -160,7 +162,8 @@ Check in order of priority:
 1. `.gitmessage` template
 2. `CONTRIBUTING.md` or `CLAUDE.md`
 3. Recent commit history with `git log --oneline -20`
-4. If none found, use conventional commits as described above
+4. If none found, use [Conventional Commits](https://www.conventionalcommits.org/)
+   as described above
 
 ## Breaking Change Commit Examples
 
