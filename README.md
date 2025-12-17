@@ -20,15 +20,18 @@ with custom workflows. Learn more:
 
 Transform messy, uncommitted changes into clean, well-organized atomic commits
 following [Conventional Commits](https://www.conventionalcommits.org/) standards.
-This command analyzes your codebase changes and intelligently groups related
-modifications into separate, meaningful commits.
+This command analyzes your changes and creates granular, priority-ordered commits
+with TDD-first sequencing.
 
 **Key Features:**
 
-- Automatic change analysis and grouping
+- TDD commit pairs (tests before implementation)
+- Priority-based ordering (critical fixes → features → docs)
+- Micro-intent commits (each commit has one clear purpose)
+- Partial staging for within-file boundaries (`git add -p`)
+- Precise issue references (closing keywords only on implementation)
 - [Conventional Commits](https://www.conventionalcommits.org/) message generation
 - Breaking change detection and proper notation
-- Interactive mode for ambiguous changes
 - Respects project-specific conventions
 
 [Learn more →](./commands/commit/README.md)
@@ -59,7 +62,7 @@ notes, see the installation guides linked above.
 
 ## 📋 Repository Structure
 
-```
+```text
 agent-commands/
 ├── commands/           # All agent commands
 │   └── commit/        # Example: commit command
